@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="main-page-hero col align-center justify-between" style="background-image: url('assets/images/main-page-hero-banner.jpg');">
+        <div class="main-mask"></div>
+        <a href="/" class="logo">
+            <img src="assets/images/logo_red.svg" alt="logo">
+        </a>
+        <div>Скоро открытие</div>
+        <nav>
+            <div class="mobile-burger" id="burger-button" onclick="toggleBurger()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul class="row align-center justify-center" id="burger-menu">
+                <li>
+                    <a href="/">Главная</a>
+                </li>
+                <li>
+                    <a href="/">Галерея</a>
+                </li>
+                <li>
+                    <a href="/">Приложение</a>
+                </li>
+                <li>
+                    <ul class="row align-center justify-center">
+                        <li>
+                            <a href="/">
+                                <img src="assets/images/icons/instagram.svg" alt="instagram icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <img src="assets/images/icons/facebook.svg" alt="facebook icon" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/">
+                                <img src="assets/images/icons/vk.svg" alt="vk icon" />
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/">Абонементы</a>
+                </li>
+                <li>
+                    <a href="/">Faq</a>
+                </li>
+                <li>
+                    <a href="/">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="mobile-app-section row no-wrap justify-center">
+        <div class="mobile-app-image">
+            <img src="assets/images/phone-qr.png" alt="">
+        </div>
+        <div class="mobile-app-text col">
+            <p class="section-title">Абонемент в фитнес-клуб в твоём смартфоне</p>
+            <p>
+                Покупай абонемент в 1 клик и регистрируйся на Первое пробное посещение <br>
+                Подключай свой трекер активности и участвуй в спортивных челенджах <br>
+                Узнавай первым о новостях клуба и специальных предложениях <br>
+                Создавай сообщества, находи друзей и общайся с единомышленниками
+            </p>
+            <div class="row align-center mobile-app-links">
+                <div class="row align-center">
+                <a>
+                    <img src="assets/images/download-appstore.png" alt="appstore download link">
+                </a>
+                <a>
+                    <img src="assets/images/download-playmarket.png" alt="playmarket download link">
+                </a>
+            </div>
+            <div class="row align-center">
+                <p class="code code-hint">для входа в приложение используйте код:</p>
+                <p class="code code-num">0024</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="subscriptions-section" style="background-image: url('assets/images/subscriptions-bg.jpg');">
+        <div class="main-mask"></div>
+        <div class="row justify-center">
+            <p class="section-title left-line">Абонементы</p>
+        </div>
+        <div class="row justify-center align-start no-wrap subscriptions-grid">
+            <div class="col subscriptions-types-list align-end" id="subscriptionsTypes">
+                <p data-id="1" class="active">12 месяцев</p>
+                <p data-id="2">6 месяцев</p>
+                <p data-id="3">3 месяцев</p>
+                <p data-id="4">1 месяц</p>
+                <p data-id="5">Акция</p>
+                <p data-id="6">Разовое посещение</p>
+                <p data-id="7">Прочие услуги</p>
+            </div>
+            <div class="row subscriptions-items">
+                <div class="subscription-item active" data-type-id="1">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item active" data-type-id="1">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="2">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="2">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="3">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="3">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="4">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="4">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="5">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="5">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="6">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="6">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="7">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+                <div class="subscription-item" data-type-id="7">
+                    <p class="subscription-item__name">Дневной</p>
+                    <p class="subscription-item__price">35</p>
+                    <p class="subscription-item__price-description">руб/мес</p>
+                    <p class="subscription-item__price-total">Общая сумма: 420р</p>
+                    <a class="subscription-item__buy-button">купить</a>
+                </div>
+            </div>
+            <div class="col subscriptions-type-description">
+                <div data-type-id="1" class="active">
+                    <p class="subscriptions-type-description__title">Включено</p>
+                    <ul>
+                        <li>Безлимитное посещение тренажёрного зала</li>
+                        <li>Финская сауна</li>
+                        <li>Активация абонемента: 30 дней</li>
+                        <li>30 дней заморозки</li>
+                    </ul>
+                </div>
+                <div data-type-id="2">
+                    <p class="subscriptions-type-description__title">Включено</p>
+                    <ul>
+                        <li>Безлимитное посещение тренажёрного зала</li>
+                        <li>Финская сауна</li>
+                        <li>Активация абонемента: 30 дней</li>
+                        <li>30 дней заморозки</li>
+                    </ul>
+                </div>
+                <div data-type-id="3">
+                    <p class="subscriptions-type-description__title">Включено</p>
+                    <ul>
+                        <li>Безлимитное посещение тренажёрного зала</li>
+                        <li>Финская сауна</li>
+                        <li>Активация абонемента: 30 дней</li>
+                        <li>30 дней заморозки</li>
+                    </ul>
+                </div>
+                <div data-type-id="4">
+                    <p class="subscriptions-type-description__title">Включено</p>
+                    <ul>
+                        <li>Безлимитное посещение тренажёрного зала</li>
+                        <li>Финская сауна</li>
+                        <li>Активация абонемента: 30 дней</li>
+                        <li>30 дней заморозки</li>
+                    </ul>
+                </div>
+                <div data-type-id="5">
+                    <p class="subscriptions-type-description__title">Включено</p>
+                    <ul>
+                        <li>Безлимитное посещение тренажёрного зала</li>
+                        <li>Финская сауна</li>
+                        <li>Активация абонемента: 30 дней</li>
+                        <li>30 дней заморозки</li>
+                    </ul>
+                </div>
+                <div data-type-id="6">
+                    <p class="subscriptions-type-description__title">Включено</p>
+                    <ul>
+                        <li>Безлимитное посещение тренажёрного зала</li>
+                        <li>Финская сауна</li>
+                        <li>Активация абонемента: 30 дней</li>
+                        <li>30 дней заморозки</li>
+                    </ul>
+                </div>
+                <div data-type-id="7">
+                    <p class="subscriptions-type-description__title">Включено</p>
+                    <ul>
+                        <li>Безлимитное посещение тренажёрного зала</li>
+                        <li>Финская сауна</li>
+                        <li>Активация абонемента: 30 дней</li>
+                        <li>30 дней заморозки</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <div class="row justify-center">
+            <p class="section-title right-line">галерея</p>
+        </div>
+        <div class="gallery-grid" id="gallery">
+            <img src="/assets/images/gallery-1.jpg" data-num="0"/>
+            <img src="/assets/images/gallery-2.jpg" data-num="1"/>
+            <img src="/assets/images/gallery-3.jpg" data-num="2"/>
+            <img src="/assets/images/gallery-1.jpg" data-num="3"/>
+            <img src="/assets/images/gallery-1.jpg" data-num="4"/>
+            <img src="/assets/images/gallery-1.jpg" data-num="5"/>
+        </div>
+    </section>
+    <section class="zones-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="zone-background" style="background-image: url('assets/images/gallery-2.jpg');"></div>
+                    <div class="zones-slider__content-container">
+                        <p class="zone-title">Кардиозона</p>
+                        <div class="zone-description">
+                            Инновационная и умная кардиозона не оставит без внимания даже самых искушённых любителей кардио-нагрузок.
+        Мы предлагаем к вашим услугам более 40 различных кардиотренажёров.
+                        </div>
+                    </div>
+                  </div>
+              <div class="swiper-slide">
+                <div class="zone-background" style="background-image: url('assets/images/gallery-2.jpg');"></div>
+                <div class="zones-slider__content-container">
+                    <p class="zone-title">Кардиозона</p>
+                    <div class="zone-description">
+                        Инновационная и умная кардиозона не оставит без внимания даже самых искушённых любителей кардио-нагрузок.
+    Мы предлагаем к вашим услугам более 40 различных кардиотренажёров.
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+          <div class="zones-slider__actions-container">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="faq-section" style="background-image: url('assets/images/faq-bg.jpg');">
+        <div class="row justify-center">
+            <p class="section-title left-line">faq</p>
+        </div>
+        <div class="main-mask"></div>
+        <div class="faq-items">
+            <div class="faq-item">
+                <div class="faq-question row no-wrap">
+                    <p>Как купить абонемент и попасть в зал?</p>
+                    <span>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </div>
+                <div class="faq-answer row">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia labore excepturi assumenda esse maiores aperiam exercitationem obcaecati expedita voluptas vel repudiandae perspiciatis ipsam ullam suscipit sequi, nulla hic, rem perferendis.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question row no-wrap">
+                    <p>Как купить абонемент и попасть в зал?</p>
+                    <span>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </div>
+                <div class="faq-answer row">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia labore excepturi assumenda esse maiores aperiam exercitationem obcaecati expedita voluptas vel repudiandae perspiciatis ipsam ullam suscipit sequi, nulla hic, rem perferendis.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question row no-wrap">
+                    <p>Как купить абонемент и попасть в зал?</p>
+                    <span>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </div>
+                <div class="faq-answer row">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia labore excepturi assumenda esse maiores aperiam exercitationem obcaecati expedita voluptas vel repudiandae perspiciatis ipsam ullam suscipit sequi, nulla hic, rem perferendis.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question row no-wrap">
+                    <p>Как купить абонемент и попасть в зал?</p>
+                    <span>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </div>
+                <div class="faq-answer row">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia labore excepturi assumenda esse maiores aperiam exercitationem obcaecati expedita voluptas vel repudiandae perspiciatis ipsam ullam suscipit sequi, nulla hic, rem perferendis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
