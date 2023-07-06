@@ -636,6 +636,17 @@ p.section-title.right-line:before{
     background-repeat: no-repeat;
 }
 
+.subscriptions-section__message{
+    color: var(--main-color);
+    font-family: "Play";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    margin-bottom: 60px;
+}
+
 .subscriptions-grid{
     color: #fff;
 }
@@ -903,6 +914,7 @@ p.section-title.right-line:before{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: auto;
 }
 
 .zones-section .swiper-slide .zones-slider__content-container {
