@@ -645,6 +645,7 @@ p.section-title.right-line:before{
     line-height: normal;
     position: relative;
     margin-bottom: 60px;
+    text-align: center;
 }
 
 .subscriptions-grid{
