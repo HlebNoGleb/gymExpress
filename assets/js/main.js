@@ -11,7 +11,7 @@ const toggleBurger = () => {
     }
 }
 
-const gallery = document.getElementById("gallery");
+const gallery = document.getElementById("gallery-slides");
 
 gallery.addEventListener("click", function(e) {
     const initSlide = e.target.getAttribute("data-num") ?? 0;
@@ -30,12 +30,15 @@ function createFullscreenSwiper(fromSelector, initSlide) {
 
     document.body.appendChild(popup);
 
-    const swiperrr = new Swiper('.swiper', {
+    const swiperrr = new Swiper('.fullscreen-swiper', {
         loop: true,
-        pagination: true,
         navigation: true,
         centeredSlides: true,
-        initialSlide: initSlide
+        initialSlide: initSlide,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
     });
 }
 
@@ -65,6 +68,8 @@ function createFullscreenSwiperPopup(){
         removeFullscreenSwiper();
     });
 
+    popup.appendChild(popupCross);
+
     popup.appendChild(popupMask);
     return popup;
 }
@@ -72,6 +77,8 @@ function createFullscreenSwiperPopup(){
 function createSwiper(fromSelector){
     const swiper = document.createElement('div');
     swiper.classList.add('swiper');
+    swiper.classList.add('fullscreen-swiper');
+
 
     const swiperWrapper = createFullscreenSwiperWrapper();
 
@@ -148,3 +155,13 @@ function toggleFaqItem(item) {
     item.classList.toggle("active")
     item.closest(".faq-item").classList.toggle("active")
 }
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
