@@ -1092,7 +1092,7 @@ p.section-title.right-line:before{
     /* display: block; */
     opacity: 1;
     transition: .5s all ease;
-    max-height: 300px;
+    max-height: 600px;
 }
 
 .faq-answer > p{
@@ -1264,6 +1264,10 @@ input[type="text"], input[type="email"], textarea{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.footer-form form span{
+    margin-bottom: 10px;
 }
 
 .footer-form form a{
