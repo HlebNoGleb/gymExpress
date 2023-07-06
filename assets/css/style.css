@@ -824,7 +824,7 @@ p.section-title.right-line:before{
 
 @media(max-width: 650px){
     .subscriptions-grid .subscription-item{
-        padding: 20px;
+        padding: 20px 10px;
         text-align: center;
         color: var(--main-color);
         border: 0.3px solid var(--contrast-color);
@@ -852,6 +852,10 @@ p.section-title.right-line:before{
         font-size: 14px;
         line-height: normal;
         margin-bottom: 25px;
+    }
+
+    .subscription-item__buy-button{
+        font-size: 14px;
     }
 }
 
@@ -1112,6 +1116,9 @@ p.section-title.right-line:before{
     max-width: 550px;
     padding: 100px 40px;
     position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .map-background{
@@ -1157,7 +1164,7 @@ p.section-title.right-line:before{
     .contacts-block{
         max-width: 100%;
         width: 100%;
-        padding: 100px 40px;
+        padding: 100px 20px;
     }
 }
 
