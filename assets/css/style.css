@@ -875,8 +875,17 @@ p.section-title.right-line:before{
 
 
 @media(max-width: 400px){
+    .subscriptions-grid .subscription-item:nth-child(odd) {
+        margin-right: 10px;
+    }
+
+    .subscriptions-items{
+        justify-content: center!important;
+        width: 100%!important;
+    }
+
     .subscriptions-grid .subscription-item{
-        width: calc(50% - 10px);
+        width: calc(50% - 5px);
     }
 
     .subscription-item__name{
