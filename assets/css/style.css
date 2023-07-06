@@ -622,7 +622,7 @@ p.section-title.right-line:before{
     width: 32px;
     height: 32px;
     z-index: 2;
-    background-image: url('assets/images/icons/cross.svg');
+    background-image: url('../assets/images/icons/cross.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -900,12 +900,12 @@ p.section-title.right-line:before{
 }
 
 .zones-section .swiper-button-next{
-    background-image: url("assets/images/icons/arrow.svg");
+    background-image: url("../assets/images/icons/arrow.svg");
     transform: rotate(180deg);
 }
 
 .zones-section .swiper-button-prev{
-    background-image: url("assets/images/icons/arrow.svg");
+    background-image: url("../assets/images/icons/arrow.svg");
 }
 
 .zones-section .zones-slider__content-container p.zone-title{
