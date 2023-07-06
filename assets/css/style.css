@@ -687,7 +687,7 @@ p.section-title.right-line:before{
 
 .subscriptions-grid .subscription-item{
     width: 100%;
-    padding: 40px 60px;
+    padding: 40px 30px;
     text-align: center;
     color: var(--main-color);
     border: 1px solid var(--contrast-color);
@@ -695,6 +695,7 @@ p.section-title.right-line:before{
     max-width: 300px;
     display: none;
     transition: .3s all ease;
+    min-width: 300px;
 }
 
 .subscriptions-grid .subscription-item:hover{
@@ -834,7 +835,7 @@ p.section-title.right-line:before{
     }
 }
 
-@media(max-width: 650px){
+@media(max-width: 680px){
     .subscriptions-grid .subscription-item{
         padding: 20px 10px;
         text-align: center;
@@ -842,6 +843,7 @@ p.section-title.right-line:before{
         border: 0.3px solid var(--contrast-color);
         background: rgba(0, 0, 0, 0.40);
         width: calc(50% - 10px);
+        min-width: auto;
     }
 
     .subscription-item__name{
