@@ -20,6 +20,10 @@ gallery.addEventListener("click", function(e) {
 
 function createFullscreenSwiper(fromSelector, initSlide) {
 
+    if (window.screen.width < 767){
+        return;
+    }
+
     removeFullscreenSwiper();
 
     const popup = createFullscreenSwiperPopup();
