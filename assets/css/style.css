@@ -640,7 +640,6 @@ p.section-title.right-line:before{
     color: #fff;
 }
 
-
 .subscriptions-grid > div:nth-child(1){
     width: 300px;
     margin-right: 20px;
@@ -679,10 +678,21 @@ p.section-title.right-line:before{
     padding: 40px 60px;
     text-align: center;
     color: var(--main-color);
-    border: 0.3px solid var(--contrast-color);
+    border: 1px solid var(--contrast-color);
     background: rgba(0, 0, 0, 0.40);
     max-width: 300px;
     display: none;
+    transition: .3s all ease;
+}
+
+.subscriptions-grid .subscription-item:hover{
+    background: rgba(0, 0, 0, 0.70);
+    box-shadow: 0px 0px 25px 0px rgba(0, 245, 245, 0.50);
+}
+
+.subscriptions-grid .subscription-item:hover > *{
+    color: var(--contrast-color);
+    filter: drop-shadow(0px 0px 25px 0px rgba(0, 245, 245, 0.50));
 }
 
 .subscriptions-grid .subscription-item:nth-child(odd){
@@ -692,7 +702,6 @@ p.section-title.right-line:before{
 [data-type-id]{
     display: none;
 }
-
 
 [data-type-id].active{
     display: block;
@@ -740,6 +749,24 @@ p.section-title.right-line:before{
     font-weight: 500;
     line-height: normal;
     margin-bottom: 20px;
+}
+
+.subscription-item__buy-button{
+    padding: 8px 24px;
+    background: rgba(255, 255, 255, 0.20);
+    color: var(--main-color);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+
+.subscription-item__buy-button:hover{
+    padding: 8px 24px;
+    background: var(--contrast-color);
+    color: var(--background)!important;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .subscriptions-type-description ul{
