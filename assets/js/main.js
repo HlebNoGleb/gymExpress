@@ -145,6 +145,8 @@ var swiper = new Swiper(".zones-section .mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    autoplay: true,
+    loop: true
 });
 
 const faqButtons = document.querySelectorAll(".faq-question span");
@@ -166,6 +168,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
+        });
+    });
+});
+
+document.querySelectorAll('a.subscription-item__buy-button').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+
+        Swal.fire({
+            title: 'Приобрести абонемень можно в мобильном приложении',
+            background: "var(--background)",
+            color: "var(--main-color)",
+            confirmButtonColor: "var(--contrast-color)"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                setTimeout(() => {
+                    const element = document.getElementById("app");
+                    element.scrollIntoView({ behavior: "smooth", block: "center", inline: "end" });
+                }, 200);
+            }
         });
     });
 });
