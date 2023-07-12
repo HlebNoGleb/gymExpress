@@ -474,7 +474,8 @@ p.section-title.right-line:before{
 }
 
 .mobile-app-image{
-    min-width: 300px;
+    max-width: 300px;
+    min-width: 300px
 }
 .mobile-app-text p {
     color: var(--main-color);

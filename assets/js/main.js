@@ -176,7 +176,7 @@ document.querySelectorAll('a.subscription-item__buy-button').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
 
         Swal.fire({
-            title: 'Приобрести абонемень можно в мобильном приложении',
+            title: 'Приобрести абонемент можно в мобильном приложении',
             background: "var(--background)",
             color: "var(--main-color)",
             confirmButtonColor: "var(--contrast-color)"
