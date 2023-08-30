@@ -44,7 +44,7 @@ a {
 
 :root {
     --main-color: #fff;
-    --contrast-color: #00F5F5;
+    --contrast-color: #F40C1A;
     --sub-color: #707487;
     --red-color: #F40C1A;
     --background: #212228;
@@ -162,6 +162,35 @@ p.section-title.right-line:before{
     height: 80vh;
     padding-top: 80px;
     padding-bottom: 0;
+}
+
+.main-page-hero a.phone-link{
+    color: var(--contrast-color);
+    font-size: 40px;
+    font-family: 'TT_Bricks';
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.bgvideo {
+    position: absolute;
+    z-index: -1!important;
+    top: 0;
+    left: 0;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .bgvideo { display: none; }
 }
 
 *:not(.main-mask) {
