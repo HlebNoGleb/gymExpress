@@ -1356,3 +1356,116 @@ input[type="text"], input[type="email"], textarea{
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     color: var(--background)
 }
+
+.scr-img-wrap {
+	display: block;
+	max-width:1920px;
+	width: 100%;
+	margin: 20px auto 0;
+    padding: 20px 0;
+	cursor: pointer;
+	position: relative;
+	background-repeat: no-repeat;
+    background-position: top center;
+	background-size: cover;
+	height: 281px;
+    max-width: 1260px;
+    text-align: center;
+}
+
+.icn-play-3d,
+.play-3d-text {
+	display: block;
+	position: absolute;
+}
+
+.icn-play-3d {
+    max-width: 137px;
+    width: 100%;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+	width: 100%;
+	margin:  auto;
+}
+
+.icn-play-3d img{
+	display: block;
+	width: 100%;
+
+}
+
+.play-3d-text {
+	color: #fff;
+	font-size: 40px;
+	line-height: 48px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+
+}
+
+@media (max-width: 767px)  {
+	.play-3d-text {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	.icn-play-3d {
+		max-width: 60px;
+		bottom: 50%;
+		margin: 0 auto -70px;
+	}
+
+}
+
+.tabs-container{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+/* Tabs */
+.tabs{
+    margin-top: 50px;
+    margin-bottom: min(50px, 10vh);
+  }
+  .tabs ul{
+    list-style: none;
+  }
+  .tabs__nav{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tabs__nav li{
+    font-size: 1rem;
+    padding: .5em 0;
+    margin-right: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-bottom: 2px solid transparent;
+  }
+  .tabs__nav li:hover{
+    border-bottom: 2px solid var(--contrast-color);
+  }
+  .tabs__nav-btn.active{
+    border-bottom: 2px solid var(--contrast-color);
+  }
+  .tabs__item{
+    display: none;
+    /* background-color: aquamarine; */
+  }
+  .tabs__item.active{
+    display: block;
+  }
+
+  @media (max-width: 767px) {
+    .tabs__nav{
+        flex-direction: column;
+        align-items: center;
+      }
+  }
+  /* End Tabs */

@@ -190,3 +190,52 @@ document.querySelectorAll('a.subscription-item__buy-button').forEach(anchor => {
         });
     });
 });
+
+const button3d = document.getElementById("play-3d");
+console.log(button3d)
+button3d.addEventListener('click', function (e) {
+
+    Swal.fire({
+        title: 'Виртуальная панорама',
+        background: "var(--background)",
+        color: "var(--main-color)",
+        confirmButtonColor: "var(--contrast-color)",
+        html: "<div style='width: 500px; height: 410px;'><iframe src='https://my.matterport.com/show/?m=go9mTBpXLUG&amp;lang=ru' width='500' height='400' frameborder='0' allowfullscreen='' allow='vr'></iframe></div>",
+    }).then((result) => {
+        if (result.isConfirmed) {
+            setTimeout(() => {
+                const element = document.getElementById("app");
+                element.scrollIntoView({ behavior: "smooth", block: "center", inline: "end" });
+            }, 200);
+        }
+    });
+});
+
+/* Tabs */
+
+const tabsBtn = document.querySelectorAll('.tabs__nav-btn');
+const tabsItem = document.querySelectorAll('.tabs__item');
+
+tabsBtn.forEach((item, index) => {
+    let currenrBtnIndex = index;
+
+    item.addEventListener('click', function () {
+        if (!item.classList.contains('active')) {
+
+            tabsBtn.forEach(function (item) {
+                item.classList.remove('active');
+            });
+            item.classList.add('active');
+
+            tabsItem.forEach((item, index) => {
+                let currentTabIndex = index;
+                item.classList.remove('active');
+                if (currenrBtnIndex == currentTabIndex) {
+                    item.classList.add('active');
+                }
+            });
+        }
+    });
+
+});
+
